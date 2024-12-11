@@ -1,0 +1,182 @@
+/* CSS para el carrito */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4e4;
+    color: #333;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+header.header-mobile {
+    display: none; /* Se oculta en escritorio */
+}
+
+.titulo-principal {
+    font-size: 1.5em;
+    color: #3d8b3d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-carrito {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.carrito-producto-imagen {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carrito-producto-titulo h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #3d8b3d;
+}
+
+.carrito-producto-titulo small {
+    color: #888;
+}
+
+.carrito-producto-cantidad, .carrito-producto-precio, .carrito-producto-subtotal {
+    text-align: center;
+}
+
+.carrito-producto-eliminar {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+}
+
+.carrito-producto-eliminar i {
+    font-size: 1.2em;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.carrito-acciones-vaciar {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito-acciones-total {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrito-acciones-total p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.carrito-acciones-comprar {
+    background-color: #3d8b3d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Aside (barra lateral) */
+aside {
+    background-color: #3d8b3d;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside .logo {
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 15px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+aside nav ul li a.active {
+    font-weight: bold;
+    color: #f8f4e4;
+}
+
+aside footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header.header-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3d8b3d;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+}
