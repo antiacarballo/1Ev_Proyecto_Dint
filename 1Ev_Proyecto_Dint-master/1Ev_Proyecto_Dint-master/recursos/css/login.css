@@ -25,6 +25,7 @@ form{
 
 h2{
     background-color: var(--clr-white);
+    color: var(--clr-main);
 }
 
 #nombre{
