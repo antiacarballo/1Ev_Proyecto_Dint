@@ -9,10 +9,17 @@ body {
 .contenedor {
     display: flex;
     flex-wrap: nowrap;
+<<<<<<< HEAD
     min-height: 100vh;
 }
 main {
     flex: 1; 
+=======
+    min-height: 100vh; /* Asegura que todo ocupe la altura completa */
+}
+main {
+    flex: 1; /* El contenido principal ocupa el espacio restante */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
     padding: 2rem;
     background-color: var(--clr-white);
     border-radius: 15px;
@@ -38,10 +45,14 @@ header .logo {
 }
 
 .close-menu {
+<<<<<<< HEAD
     display: none; 
 }
 .close-menu {
     display: none; 
+=======
+    display: none; /* Elimina la cruz */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
 }
 
 
@@ -49,15 +60,24 @@ header .logo {
     background-color: var(--clr-gray);
     border-radius: 10px;
     padding: 2rem;
+<<<<<<< HEAD
     
+=======
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
 }
 
 .carrito-producto {
     display: flex;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
     border-bottom: 0.5rem ;
     padding: 1rem 0;
+=======
+    border-bottom: 1px ;
+    padding: 10px 0;
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
 }
 
 .carrito-producto-imagen {
@@ -95,7 +115,10 @@ header .logo {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+<<<<<<< HEAD
     padding: 2rem;
+=======
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
     align-items: center;
     background-color: var(--clr-white);
 }
@@ -133,8 +156,13 @@ header .logo {
 aside {
     background-color: var(--clr-main);
     color: var(--clr-white);
+<<<<<<< HEAD
     width: 30rem;
     padding: 2rem;
+=======
+    width: 300px;
+    padding: 20px;
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
     display: flex;
     flex-direction: column;
     justify-content: space-between;

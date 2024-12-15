@@ -9,11 +9,20 @@ body {
 .contenedor {
     display: flex;
     flex-wrap: nowrap;
+<<<<<<< HEAD
     min-height: 100vh; 
 }
 
 main {
     flex: 1; 
+=======
+    min-height: 100vh; /* Asegura que todo ocupe la altura completa */
+}
+
+/* Main */
+main {
+    flex: 1; /* El contenido principal ocupa el espacio restante */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
     padding: 2rem;
     background-color: var(--clr-white);
     border-radius: 15px;
@@ -38,7 +47,11 @@ h1 {
 }
 
 .producto {
+<<<<<<< HEAD
     background-color: var(--crl-white);
+=======
+    background-color: white;
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
     border-radius: 15px;
     overflow: hidden;
     display: flex;
@@ -84,6 +97,10 @@ h1 {
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+/* Aside */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
 aside {
     width: 20rem;
     background-color: var(--clr-main); 
@@ -93,15 +110,26 @@ aside {
     justify-content: space-between;
     padding: 3rem 2rem;
     border-radius: 15px;
+<<<<<<< HEAD
     margin: 2rem; 
+=======
+    margin: 2rem; /* Espaciado alrededor del aside */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
 }
 
 .menu {
     list-style: none;
+<<<<<<< HEAD
     margin-top: 4rem; 
     margin-bottom: 2rem; 
     padding: 0;
     gap: 1rem; 
+=======
+    margin-top: 4rem; /* Espaciado superior para bajar los botones */
+    margin-bottom: 2rem; /* Espaciado inferior para separarlos del footer */
+    padding: 0;
+    gap: 1rem; /* Espaciado entre botones */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
     display: flex;
     flex-direction: column;
 }
@@ -138,6 +166,7 @@ aside {
     font-weight: bold;
     font-size: 0.8rem;
     margin-left: auto;
+<<<<<<< HEAD
 }
 header .logo {
     font-size: 1.8rem;
@@ -153,11 +182,20 @@ header .logo {
 footer {
     text-align: center;
     margin-top: auto; 
+=======
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: auto; /* Empuja el footer al final del menú */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
     padding: 1rem 0;
     font-size: 0.9rem;
     color: var(--clr-white);
 }
 
+<<<<<<< HEAD
 .header-mobile {
     display: none;
 }
@@ -168,6 +206,19 @@ footer {
 
 .open-menu {
     display: none; 
+=======
+/* Header Mobile (Ocultar íconos de menú) */
+.header-mobile {
+    display: none; /* Ocultar en escritorio */
+}
+
+.close-menu {
+    display: none; /* Elimina la cruz */
+}
+
+.open-menu {
+    display: none; /* Elimina las tres rayas */
+>>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
 }
 
 
