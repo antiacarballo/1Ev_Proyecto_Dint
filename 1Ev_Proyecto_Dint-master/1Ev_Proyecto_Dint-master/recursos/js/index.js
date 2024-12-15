@@ -1,5 +1,5 @@
 document.getElementById('formulario').addEventListener('submit', function (event) {
-<<<<<<< HEAD
+
   event.preventDefault(); 
 
   const nombre = document.getElementById('nombre').value.trim();
@@ -41,7 +41,7 @@ document.getElementById('limpiar').addEventListener('click', function () {
   document.getElementById('error-nombre').innerText = '';
   document.getElementById('error-password').innerText = '';
 });
-=======
+
     event.preventDefault(); // Prevenir el envío del formulario
     
     // Obtener valores de los campos
@@ -75,7 +75,7 @@ document.getElementById('limpiar').addEventListener('click', function () {
     if (!hayError) {
       window.location.href = 'main.html'; // Redirigir a la página principal
     }
-  });
+  
   
   // Limpiar datos al presionar "Limpiar Datos"
   document.getElementById('limpiar').addEventListener('click', function () {
@@ -85,4 +85,3 @@ document.getElementById('limpiar').addEventListener('click', function () {
     document.getElementById('error-password').innerText = '';
   });
   
->>>>>>> 9fc5f72edbd386214a94dbca662552a1a20cfefd
