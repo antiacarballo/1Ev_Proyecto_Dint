@@ -3,62 +3,77 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f4e4;
-    color: #333;
+    background-color: var(--clr-main); 
 }
 
 .contenedor {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     min-height: 100vh;
 }
-
 main {
-    flex: 1;
-    padding: 20px;
+    flex: 1; 
+    padding: 2rem;
+    background-color: var(--clr-white);
+    border-radius: 15px;
+    margin: 2rem;
 }
 
 header.header-mobile {
-    display: none; /* Se oculta en escritorio */
+    display: none; 
+}
+header .logo {
+    font-size: 1.8rem;
+    color: var(--clr-white);
+    text-decoration: none; 
+    margin: 0 auto; 
+    font-weight: bold; 
 }
 
 .titulo-principal {
     font-size: 1.5em;
-    color: #3d8b3d;
+    color: var(--clr-main);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
+.close-menu {
+    display: none; 
+}
+.close-menu {
+    display: none; 
+}
+
+
 .contenedor-carrito {
-    background-color: #fff;
+    background-color: var(--clr-gray);
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    
 }
 
 .carrito-producto {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    border-bottom: 0.5rem ;
+    padding: 1rem 0;
 }
 
 .carrito-producto-imagen {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
+    width: 6rem;
+    height: 6rem;
     border-radius: 5px;
 }
 
 .carrito-producto-titulo h3 {
     margin: 0;
     font-size: 1em;
-    color: #3d8b3d;
+    color: var(--clr-main);
 }
 
 .carrito-producto-titulo small {
-    color: #888;
+    color: var(--clr-gray);
 }
 
 .carrito-producto-cantidad, .carrito-producto-precio, .carrito-producto-subtotal {
@@ -68,7 +83,7 @@ header.header-mobile {
 .carrito-producto-eliminar {
     background: none;
     border: none;
-    color: #d9534f;
+    color: var(--clr-red);
     cursor: pointer;
 }
 
@@ -79,15 +94,17 @@ header.header-mobile {
 .carrito-acciones {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 2rem;
+    padding: 2rem;
     align-items: center;
+    background-color: var(--clr-white);
 }
 
 .carrito-acciones-vaciar {
-    background-color: #d9534f;
-    color: white;
+    background-color: var(--clr-gray);
+    color: var(--clr-main);
     border: none;
-    padding: 10px 15px;
+    padding: 1rem 0.8rem;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -95,30 +112,29 @@ header.header-mobile {
 .carrito-acciones-total {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .carrito-acciones-total p {
     margin: 0;
     font-size: 1.2em;
-    color: #333;
+    color: var(--clr-main);
 }
 
 .carrito-acciones-comprar {
-    background-color: #3d8b3d;
-    color: white;
+    background-color: var(--clr-main);
+    color: var(--clr-white);
     border: none;
-    padding: 10px 15px;
+    padding: 1rem 0.8rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Aside (barra lateral) */
 aside {
-    background-color: #3d8b3d;
-    color: white;
-    width: 300px;
-    padding: 20px;
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    width: 30rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,9 +142,9 @@ aside {
 
 aside .logo {
     font-size: 1.8em;
-    color: white;
+    color: var(--clr-white);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 aside nav ul {
@@ -138,12 +154,12 @@ aside nav ul {
 }
 
 aside nav ul li {
-    margin-bottom: 15px;
+    margin-bottom: 7rem;
 }
 
 aside nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--clr-white);
     font-size: 1.2em;
     display: flex;
     align-items: center;
@@ -152,24 +168,23 @@ aside nav ul li a {
 
 aside nav ul li a.active {
     font-weight: bold;
-    color: #f8f4e4;
+    color: var(--clr-white);
 }
 
 aside footer {
     text-align: center;
     font-size: 0.9em;
-    color: #ddd;
+    color: var(--clr-white);
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     header.header-mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #3d8b3d;
-        color: white;
-        padding: 10px 20px;
+        background-color: var(--clr-main);
+        color: var(--clr-white);
+        padding: 1rem 2rem;
     }
 
     aside {
